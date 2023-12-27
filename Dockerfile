@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install project dependencies
-RUN npm install
+RUN npm install formidable@v2
 
 # Copy the rest of the application code to the container
 COPY . .
